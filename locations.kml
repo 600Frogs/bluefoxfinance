@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+	<Document>
+		<name>Locations for Blue Fox Finance - Mortgage Broker Brisbane.</name>
+		<atom:author>
+			<atom:name>Zak Avery</atom:name>
+		</atom:author>
+		<atom:link rel="related" href="https://bluefoxfinance.com.au" />
+		<Folder>
+			<Placemark>
+				<name><![CDATA[Blue Fox Finance - Mortgage Broker Brisbane]]></name>
+				<address><![CDATA[56 Essex St, Mitchelton, 4053, Australia]]></address>
+				<phoneNumber><![CDATA[0733544576]]></phoneNumber>
+				<description><![CDATA[A Finance and Mortgage Broker Brisbane]]></description>
+				<Point>
+					<coordinates>152.9660212,-27.4001718,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+	</Document>
+</kml>

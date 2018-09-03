@@ -1,0 +1,106 @@
+/* Interest rate Bar */
+
+#interest-rate-bar{
+    background-color:rgb(33,150,243);
+    width:100vw;
+    height:190px;
+    color:#fff;
+    text-align:center;
+}
+#interest-rate-bar p {
+    color:#fff;
+}
+.interest-rate {
+    font-size:25px;
+    line-height: 35px;
+}
+
+.loan-type-text {
+    font-size:20px;
+    font-weight: bold;
+}
+
+.ir-button {
+    margin-top:10px;
+}
+
+.tooltip-text {
+    line-height:15px;
+}
+
+.mdl-tooltip {
+    max-width:300px;
+    border-radius:10px;
+}
+
+.tooltip-text:hover {
+    cursor:pointer;
+}
+
+.interest-rate-display {
+    display:inline-block;
+    margin:0px 10px 0px 10px;
+    border: 2px solid #e6e6e6;
+    padding:10px;
+    border-radius:10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.loan-type-selector {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    height: 43px;
+}
+
+
+.swal2-popup .swal2-title {
+    line-height: 40px !important;
+}
+
+#investment,#owner-occupied,#car-loan,#personal-loan,#refinances,#pre-approvals{display:none;}
+
+
+
+@media screen and (max-width: 1500px) {
+    .interest-rate-display {
+        -ms-transform: scale(0.6, 0.6); /* IE 9 */
+        -webkit-transform: scale(0.6, 0.6); /* Safari */
+        transform: scale(0.6, 0.6);
+        margin: -20px;
+    }
+    #interest-rate-bar{
+        height:160px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .interest-rate-display {
+        margin: -20px -60px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .interest-rate-display {
+        -ms-transform: scale(0.5, 0.5); /* IE 9 */
+        -webkit-transform: scale(0.5, 0.5); /* Safari */
+        transform: scale(0.5, 0.5);
+        margin: -20px -80px;
+    }
+    
+
+}
+
+@media screen and (max-width: 740px) {
+    #interest-rate-bar p {display:none}
+    
+    
+    .interest-rate-display {
+        -ms-transform: scale(0.9, 0.9); /* IE 9 */
+        -webkit-transform: scale(0.9, 0.9); /* Safari */
+        transform: scale(0.9, 0.9);
+        margin: 10px 0px 0px 0px;
+    }
+}
+

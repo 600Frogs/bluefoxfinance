@@ -1,0 +1,2 @@
+<style>#sidebar{position:absolute;top:300px;left:20px;width:450px;text-align:right}#sidebar ul{border-right:3px solid #8FD0E5;padding:0 30px 0 0}#sidebar ul li{text-align:right;list-style:none;display:inline-block;font-size:16px;padding:10px;color:#516c72;width:100%}#sidebar ul li:hover,#sidebar ul li.active{background-color:#8FD0E5;color:#fff}#sidebar h3{text-align:right}@media screen and (max-width:1450px){#sidebar{width:350px}}@media screen and (max-width:1250px){#sidebar{display:none}.blog-content{padding-left:20px}}</style>
+

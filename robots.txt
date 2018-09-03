@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+sitemap: http://bluefoxfinance.com.au/sitemap.xml

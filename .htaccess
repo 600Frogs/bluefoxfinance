@@ -1,0 +1,75 @@
+RewriteEngine on
+
+#unless directory, remove trailing slash
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [R=301,L]
+
+#resolve .php file for extensionless php urls
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+#redirect external .php requests to extensionless url
+RewriteCond %{THE_REQUEST} ^[A-Z]+\ /([^/]+/)*[^.#?\ ]+\.php([#?][^\ ]*)?\ HTTP/
+RewriteRule ^(([^/]+/)*[^.]+)\.php /$1 [R=301,L]
+
+ErrorDocument 404 /404.php
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/pdf "access plus 1 month"
+ExpiresByType text/x-javascript "access plus 1 month"
+ExpiresByType application/x-javascript "access 1 month"
+ExpiresByType application/javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresDefault "access plus 2 days"
+</IfModule>
+## EXPIRES CACHING ##
+
+RedirectPermanent https://bluefoxfinance.com.au/mortgage-broker-brisbane https://bluefoxfinance.com.au
+RedirectPermanent http://www.bluefoxfinance.com.au http://bluefoxfinance.com.au
+RedirectPermanent /housing-affordability-really-problem-brisbane /useful-information/is-housing-affordability-in-brisbane-really-a-problem
+RedirectPermanent /is-housing-affordability-in-brisbane-really-a-problem /useful-information/is-housing-affordability-in-brisbane-really-a-problem
+RedirectPermanent /wp-content/uploads/2016/10/Stand-Alone-Loans.png /media/articles/Stand-Alone-Loans.png
+RedirectPermanent /cross-collateralization-explained /useful-information/cross-collateralization-explained
+RedirectPermanent /the-cost-of-buying-a-house-in-queensland /useful-information/the-costs-of-buying-house-in-qld
+RedirectPermanent /what-does-a-mortgage-broker-do /useful-information/what-does-a-mortgage-broker-do
+RedirectPermanent /the-home-loan-process /useful-information/the-home-loan-process
+RedirectPermanent /the-home-buying-process /useful-information/the-home-buying-process
+RedirectPermanent /the-car-loan-process /useful-information/car-loan-process
+RedirectPermanent /stamp-duty-explained /useful-information/stamp-duty-queensland
+RedirectPermanent /pre-approvals-explained /useful-information/what-is-a-pre-approval
+RedirectPermanent /mortgage-broker-vs-bank /useful-information/mortgage-broker-vs-bank-pros-and-cons
+RedirectPermanent /what-is-lenders-mortgage-insurance /useful-information/what-is-lenders-mortgage-insurance-in-australia
+RedirectPermanent /how-does-a-mortgage-broker-get-paid /useful-information/how-does-a-mortgage-broker-get-paid
+RedirectPermanent /how-a-guarantor-loan-works /useful-information/how-a-guarantor-works
+RedirectPermanent /first-home-buyers-information /first-time-home-buyers-how-to-buy-a-house
+RedirectPermanent /ways-to-strengthen-your-home-loan-application /useful-information/ways-to-strengthen-your-home-loan-application
+RedirectPermanent /offset-accounts-explained /useful-information/how-an-offset-account-works
+RedirectPermanent /the-different-types-of-home-loans /useful-information/the-different-types-of-home-loans
+RedirectPermanent /glossary /useful-information/glossary
+RedirectPermanent /small-business-loans /business-loans/small-business-loan-broker
+RedirectPermanent /boat-loans /boat-loan-broker-brisbane
+RedirectPermanent /investment-interest-rates /home-loans/investment
+RedirectPermanent /interest-rates /home-loans/owner-occupied
+RedirectPermanent /owner-occupied-interest-rates /home-loans/owner-occupied
+RedirectPermanent /bad-credit /home-loans/bad-credit-home-loan-broker
+RedirectPermanent /pre-approvals /home-loans/pre-approval
+RedirectPermanent /construction-loans /home-loans/owner-occupied
+RedirectPermanent /equipment-finance /business-loans/equipment-finance-broker-brisbane
+RedirectPermanent /car-finance /car-loan-broker-brisbane
+RedirectPermanent /personal-loan-broker /personal-loan-broker-brisbane
+RedirectPermanent /refinances-and-debt-consolidation /home-loans/refinance
+RedirectPermanent /first-home-buyers /home-loans/first-home-buyers
+RedirectPermanent /contact-us /contact
+RedirectPermanent /blog /information-directory
+RedirectPermanent /useful-information/what-is-a-pre-approval /home-loans/pre-approvals/what-is-a-pre-approval
+RedirectPermanent /self-employed-home-loan-requirements /home-loans/self-employed/self-employed-home-loan-requirements
+RedirectPermanent /self-employed-home-loans/ /home-loans/self-employed/
